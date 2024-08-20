@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout Example</title>
+    <style>
+      
+        #container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "section aside"
+                "footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        header {
+            grid-area: header;
+            background-color: #9b1e1e;
+            padding: 10px;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #4e5f08;
+            padding: 10px;
+        }
+        section {
+            grid-area: section;
+            background-color: #4b8393;
+            padding: 10px;
+        }
+        aside {
+            grid-area: aside;
+            background-color: #8555b6;
+            padding: 10px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #750820;
+            padding: 10px;
+            text-align: center;
+        }
+        article {
+            background-color: #715a5a;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <header>
+        <h1>Header Section</h1>
+    </header>
+    
+    <nav>
+        <p>Navigation Menu</p>
+    </nav>
+    
+    <section>
+   
+        <article>
+            <h2>Article 1</h2>
+            <p>Content of the first article.</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p>Content of the second article.</p>
+        </article>
+    </section>
+    
+    <aside>
+        <section>
+            <h2>Side Section 1</h2>
+            <p>Additional content or links.</p>
+        </section>
+        <section>
+            <h2>Side Section 2</h2>
+            <p>More content or ads.</p>
+        </section>
+    </aside>
+    
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</div>
+
+</body>
+</html>
